@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Mi página web</title>
+    <link rel="stylesheet" type="text/css" href="pantallas.css">
+  </head>  
+  <body>
+      <div class="slider-container">
+        <div><img src="Foto_11.jpg"></div>
+        <div><img src="Foto_2.jpg"></div>
+        <div><img src="Foto_3.jpg"></div>
+      </div>    
+      <h1> Cerrajeria</h1>
+      <button onclick="location.href='tel:3228860007'">3228860007</button>
+    <button onclick="contactarWhatsApp()">WhatsApp</button>
+    <script type="text/javascript" src="tu_archivo.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.multiple-items').slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 3
+        });
+      });
+      
+      function contactarWhatsApp() {
+        var mensaje = "Hola, estoy interesado en sus productos";
+        var url = "https://wa.me/" + encodeURIComponent(mensaje);
+        window.open(url, '_blank');
+      }
+      
+      $(document).ready(function(){
+        $('.slider').slick({
+          infinite: true,
+          vertical: true, // Agregamos esta línea para que el carrusel sea vertical
+          verticalSwiping: true,  
+          slidesToShow: 3,
+          slidesToScroll: 3
+        });
+      });
+    </script>
+  </body>
+</html>
+  

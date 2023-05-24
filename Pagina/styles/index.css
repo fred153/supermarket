@@ -1,0 +1,322 @@
+.main-contanier,
+a,
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    min-height: 70px;
+    background-color: coral;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.long img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.primary-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    height: max-content;
+}
+
+.primary-section > * {
+    height: 80vh;
+    width: 30vw;
+    min-width: 300px;
+    box-shadow: 0 0 0 1px rgb(255, 255, 255);
+}
+
+#icon-banner {
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
+}
+
+.buscar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+}
+
+.buscar input {
+    width: 240px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: rgb(104, 103, 103);
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+
+.buscar .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgb(0, 110, 255);
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.buscar:hover input {
+    width: 240px;
+}
+
+.buscar input:focus {
+    width: 240px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: var(--background, #592EF2);
+}
+
+.WhatsApp.button {
+    --background: #2EF2A5;
+}
+
+.action.button {
+    --background: #F2300A;
+}
+
+.slider-container {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.slider-container nav {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.slider-container nav > figure {
+    display: inline-block;
+    scroll-snap-align: start;
+    margin: unset;
+    width: 30vw;
+}
+
+.slider-container nav > figure > img {
+    height: auto;
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.tabla-datos {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.tabla-datos th,
+.tabla-datos td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+.tabla-datos th {
+    background-color: #f2f2f2;
+}
+
+.tabla-datos tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    min-height: 70px;
+    background-color: coral;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.long img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.primary-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    height: max-content;
+}
+
+.primary-section > * {
+    height: 80vh;
+    width: 30vw;
+    min-width: 300px;
+    box-shadow: 0 0 0 1px rgb(255, 255, 255);
+}
+
+#icon-banner {
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-size: contain;
+}
+
+.buscar {
+    position: relative;
+    padding: 5px;
+}
+
+.buscar input {
+    width: 240px;
+    height: 40px;
+    padding: 0 20px;
+    font-size: 18px;
+    color: rgb(104, 103, 103);
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    transition: all 0.6s ease;
+}
+
+.buscar .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: rgb(0, 110, 255);
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    cursor: pointer;
+}.buscar:hover input {
+    width: 240px;
+}
+
+.buscar input:focus {
+    width: 240px;
+}
+
+.contact-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-rows: repeat(2, 2rem) 1fr;
+    gap: 2rem;
+    box-sizing: border-box;
+    padding-block: 2rem;
+    position: absolute;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: var(--background, #592EF2);
+}
+
+.WhatsApp.button {
+    --background: #2EF2A5;
+}
+
+.action.button {
+    --background: #F2300A;
+}
+
+.slider-container {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.slider-container nav {
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.slider-container nav > figure {
+    display: inline-block;
+    scroll-snap-align: start;
+    margin: unset;
+    width: 30vw;
+}
+
+.slider-container nav > figure > img {
+    height: auto;
+    width: 100%;
+}
